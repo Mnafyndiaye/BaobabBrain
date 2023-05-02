@@ -237,11 +237,6 @@ header {
     padding: 10px;
 }
 
-.vecteur {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-}
 
 section.About {
     display: flex;
@@ -268,6 +263,12 @@ section.About {
     left: -200%;
     top: 50%;
 }
+.vecteur {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    top: 20%;
+}
 
 .text {
     width: 360px;
@@ -276,6 +277,7 @@ section.About {
     border-radius: 30px;
     position: relative;
     left: -30%;
+    bottom: 60%;
 }
 .text p {
     text-align: center;

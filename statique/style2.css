@@ -263,12 +263,15 @@ section.About {
     left: -200%;
     top: 50%;
 }
-.vecteur {
-    position: relative;
+
+ .vector{
     display: flex;
-    justify-content: flex-end;
-    top: 20%;
+    position: absolute;
+    top: 630px;
+    z-index: 100;
+    right: 0;
 }
+
 
 .text {
     width: 360px;
@@ -284,8 +287,7 @@ section.About {
     padding: 1rem;
     margin: 2rem;
     position: relative;
-    top: 10%;
-}
+    top: 10%;}
 .imag {
     width: 400px;
     position: relative;

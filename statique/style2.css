@@ -267,9 +267,9 @@ section.About {
  .vector{
     display: flex;
     position: absolute;
-    top: 630px;
+    top: 600px;
     z-index: 100;
-    right: 0;
+    right: -3px;
 }
 
 

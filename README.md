@@ -1,15 +1,95 @@
-# M2A School
- un site d'ecole online
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+# BaobabBrain
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+BaobabBrain est une plateforme d'apprentissage en ligne permettant aux étudiants de suivre des cours et de passer des examens, et aux professeurs de créer et de publier des cours ainsi que des examens.
 
-<label class="relative block">
-  <span class="sr-only">Search</span>
-  <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-    <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
-  </span>
-  <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
-</label>
+## Technologies
+
+BaobabBrain utilise les technologies suivantes :
+
+- HTML, CSS et JavaScript pour la partie frontend
+- Python et Django pour la partie backend
+- MySQL pour la base de données
+
+## Fonctionnalités
+
+BaobabBrain propose les fonctionnalités suivantes :
+
+### Utilisateur
+
+- Inscription et connexion
+- Gestion de profil (nom, adresse e-mail, mot de passe, rôle)
+- Gestion de session utilisateur
+
+### Étudiant
+
+- Consultation des cours disponibles
+- Inscription aux cours
+- Consultation des cours suivis
+- Suivi de progression dans les cours
+- Passage d'examens
+- Consultation de notes et résultats d'examens
+- Consultation de certificats obtenus
+
+### Professeur
+
+- Création et publication de cours
+- Création et publication d'examens
+- Consultation de progression des étudiants inscrits à ses cours
+
+## Installation
+
+Pour installer BaobabBrain en local, suivez les étapes suivantes :
+
+1. Clonez le dépôt GitHub :
+
+```
+git clone https://github.com/Mnafyndiaye/BaobabBrain.git
+```
+
+2. Créez un environnement virtuel et activez-le :
+
+```
+python -m venv env
+source env/bin/activate
+```
+
+3. Installez les dépendances du projet :
+
+```
+pip install -r requirements.txt
+```
+
+4. Créez la base de données :
+
+```
+python manage.py migrate
+```
+
+5. Créez un superutilisateur pour avoir accès à l'interface d'administration :
+
+```
+python manage.py createsuperuser
+```
+
+6. Lancez le serveur de développement :
+
+```
+python manage.py runserver
+```
+
+Le site web sera disponible à l'adresse `http://localhost:8000`.
+
+## Contribution
+
+Si vous souhaitez contribuer à BaobabBrain, veuillez suivre les étapes suivantes :
+
+1. Fork le dépôt
+2. Créez une branche pour votre fonctionnalité : `git checkout -b fonctionnalite/nom-de-la-fonctionnalite`
+3. Committez vos modifications : `git commit -m 'Ajout de la fonctionnalité X'`
+4. Push vos modifications sur votre fork : `git push origin fonctionnalite/nom-de-la-fonctionnalite`
+5. Créez une pull request sur le dépôt d'origine
+
+## Auteurs
+
+- [Maman Nafy Ndiaye](https://github.com/Mnafyndiaye)
+- [Modou Aicha Diop](https://github.com/modouaicha023)
